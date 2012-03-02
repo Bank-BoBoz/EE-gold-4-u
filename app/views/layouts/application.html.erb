@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eden Service</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<div id="bg">
+  <div id="logo"><%= link_to 'EE! Gold 4 you', :action => 'index', :controller => 'mains' %></div>
+
+
+  <div id="main">
+    <div id="navigation">
+
+      <ul>
+
+        <li class="first"><%= link_to 'หน้าหลัก', :action => 'index', :controller => 'mains' %> </li>
+        <li><%= link_to 'ทำไมต้องซื้อ Gold กับเรา', :action => 'whyUs', :controller => 'mains' %></li>
+        <li><%= link_to 'อัตราแลกเปลี่ยนเงิน Gold', :action => 'rate', :controller => 'mains' %></li>
+        <li><%= link_to 'วิธีการสั่งซื้อ Gold', :action => 'how', :controller => 'mains' %></li>
+        <li><%= link_to 'เกี่ยวกับเรา', :action => 'about', :controller => 'mains' %></li>
+        <li><%= link_to 'F.A.Q.', :action => 'about', :controller => 'mains' %></li>
+      </ul>
+    </div>
+
+
+    <div id="content_bg">
+
+      <body>
+      <%= yield %>
+      </body>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div id="footer_bot">
+    Copy"not"right 2012. Website by BoBoz, coded by BoBoz
+  </div>
+</div>
+
+</html>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  [name: 
+  password: 
+  role: 
+
+two:
+  [name: 
+  password: 
+  role: 

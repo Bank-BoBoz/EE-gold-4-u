@@ -1,0 +1,36 @@
+<%= stylesheet_link_tag 'style' %>
+
+
+<div class="depot-form">
+<% form_tag do %>
+
+
+
+  <% if flash[:notice] %>
+  <div class = "fb5">
+        <%= flash[:notice] %>
+        <% end %>
+  </div>
+
+
+
+<div class = "fb1">Please Log In </div>
+
+<div>
+<label for="name">Name:</label>
+<%= text_field_tag :name, params[:name] %>
+</div>
+
+<div>
+<label for="password">Password:</label>
+<%= password_field_tag :password, params[:password] %>
+</div>
+
+<div>
+<%= submit_tag "Login" %>
+</div>
+
+
+<% end %>
+
+      </div>

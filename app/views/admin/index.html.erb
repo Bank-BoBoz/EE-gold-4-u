@@ -1,0 +1,11 @@
+
+<body>
+<h1>Welcome</h1>
+  You are login as "<%= User.find_by_id(session[:user_id]).name %>"
+  <br/><br/>
+
+    <H3>Menu</H3>
+    <%= link_to "Users", :action => :index, :controller => :users  %><br/>
+    <%= link_to "Logs", :action => :index, :controller => :logs %>
+
+ </div>  </body>
